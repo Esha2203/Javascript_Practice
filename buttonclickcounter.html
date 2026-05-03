@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+            #btn
+            {
+                background-color:pink;
+            }
+            #btn1
+            {
+                background-color:blue;
+            }
+            body{
+                background-color:Yellow;
+
+            }
+        </style>
+    <body>
+        
+        <p id="demo">0</p>
+        
+        <button id="btn" onclick="button()">Increase</button>
+        <button id="btn1" onclick="button1()">Decrease</button>
+        <button onclick="button2()">Reset</button>
+
+        <script>
+            
+         let count=0;
+        function button(){
+        count+=2;
+        let result=count;
+        document.getElementById("demo").innerHTML=result;
+        
+        }
+        
+        </script>
+
+        <script>
+            let count1=0;
+        function button1(){
+            count-=1;
+            let result=count;
+        document.getElementById("demo").innerHTML=result;    
+        }
+        </script>
+
+        <script>
+            function button2(){
+                count=0;
+                let result=count;
+                document.getElementById("demo").innerHTML=result;
+            }
+        </script>
+       
+    </body>
+</html>

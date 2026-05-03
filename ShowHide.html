@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Show/Hide Text</title>
+    </head>
+    <style>
+        #text{
+            display:None;
+        }
+    </style>
+    <body>
+        <h1>There is some text here</h1>
+        <h2 id="text">Hello Duniya!</h2>
+        <button onclick="show()">Show Text</button>
+        <button onclick="hide()">Hide Text</button>
+        <script>
+        function show(){
+            document.getElementById("text").style.display="block";
+        }
+        </script>
+        <script>
+            function hide(){
+                document.getElementById("text").style.display="none";
+            }
+        </script>
+    </body>
+</html>

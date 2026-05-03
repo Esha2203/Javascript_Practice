@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            h1
+            {
+                background-color:pink;
+            }
+            .container{
+                display:flex;
+                
+                
+            }
+            .div1{
+                background-color:beige;
+                margin:10px;
+                padding:10px;
+            }
+            .div2{
+                background-color:brown;
+                margin:10px;
+                padding:10px;
+            }
+            .div3{
+                background-color:beige;
+                margin:10px;
+                padding:10px;
+            }
+            .div4{
+                background-color:brown;
+                margin:10px;
+                padding:10px;
+            }
+        
+        </style>
+    </head>
+
+    <body><center>
+        <h1>Basic Calculator</h1></center>
+        
+        
+        
+        <p id="demo"></p>
+        <div class="container">
+
+        <div  class="div1">
+            <label>Enter Number 1:</label>
+        <input type=number id="num1" ><br><br>
+        <label>Enter Number 2:</label>
+        <input type=number id="num2"><br><br>
+        <script>
+        function multiply(){
+            let n1=document.getElementById("num1").value;
+            let n2=document.getElementById("num2").value;
+            let result=n1*n2;
+            document.getElementById("result").value=result;
+            
+      
+        }
+        
+        </script>
+        <label>Result:</label>
+        <input type="number" id="result"><br><br>
+    <button onclick="multiply()" style="background-color:brown;color:beige">Multiply</button>    
+    </div>
+        <div class="div2">
+             <label style="color:white">Enter Number 1:</label>
+        <input type=number id="num3" ><br><br>
+        <label  style="color:white">Enter Number 2:</label>
+        <input type=number id="num4"><br><br>
+        <script>
+           
+            function add(){
+            let n3=Number(document.getElementById("num3").value);
+            let n4=Number(document.getElementById("num4").value);   
+            let result1=n3+ n4;
+            document.getElementById("result1").value=result1;
+           
+
+            }
+        </script>
+        <label  style="color:white">Result:</label>
+        <input type="number" id="result1"><br><br>
+     <button onclick="add()" style="background-color:beige">Add</button>    
+    </div>
+        <div class="div3">
+             <label>Enter Number 1:</label>
+        <input type=number id="num5" ><br><br>
+        <label>Enter Number 2:</label>
+        <input type=number id="num6"><br><br>
+        <script>
+            function subtract(){
+            let n5=Number(document.getElementById("num5").value);
+            let n6=Number(document.getElementById("num6").value);   
+            let result2=n5 - n6;
+            document.getElementById("result2").value=result2;
+                
+            }
+        </script>
+        <label>Result:</label>
+        <input type="number" id="result2"><br><br>
+        <button onclick="subtract()" style="background-color:brown;color:beige">Subtract</button>
+    </div>
+        <div class="div4">
+             <label  style="color:white">Enter Number 1:</label>
+        <input type=number id="num7" ><br><br>
+        <label style="color:white">Enter Number 2:</label>
+        <input type=number id="num8"><br><br>
+        <script>
+            function divide(){
+            let n7=Number(document.getElementById("num7").value);
+            let n8=Number(document.getElementById("num8").value);   
+            let result3=n7 / n8;
+            document.getElementById("result3").value=result3;
+                
+            }
+        </script>
+        <label style="color:white">Result:</label>
+        <input type="number" id="result3"><br><br>
+        <button onclick="divide()" style="background-color:beige">Divide</button>
+        </div>
+        </div>
+    </body>
+</html>

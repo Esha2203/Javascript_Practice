@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <form>
+            <label>Enter Email:</label>
+            <input type="text" id="email"><br><br>
+            <label>Password:</label>
+            <input type="password" id="password"><br><br>
+            <button type="button" onclick="hello()">Submit</button>
+            <p id="demo"></p>
+            <script>
+            function hello(){
+                let x=document.getElementById("email").value;
+                let y=document.getElementById("password").value;
+                if(x==="" || y===""){
+                    document.getElementById("demo").innerHTML="Please fill all the details";
+                    return;
+                }
+                if(y.length<6){
+                    document.getElementById("demo").innerHTML="Password length should be 6 characters minimum";
+                    return;
+                }
+                
+                    document.getElementById("demo").innerHTML="You are logged in";
+                    
+                
+            }
+            </script>
+        </form>
+    </body>
+</html>

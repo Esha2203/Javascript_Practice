@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <h3>Your To DO List</h3>
+       
+        <label>Work:</label>
+        <input id="demo1" type="text" placeholder="type your work here.."><br><br><br>
+        <button type="button" onclick="hello()">Add Task</button>
+      
+         <ul id="demo"></ul>
+        <script>
+
+            function hello(){
+                let x=document.getElementById("demo1").value;
+                let li=document.createElement("li");
+                li.innerHTML=x;
+                document.getElementById("demo").appendChild(li);
+                document.getElementById("demo1").value="";//clear input box after adding the task
+            }
+
+        </script>
+        
+    </body>
+</html>

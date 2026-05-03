@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Character Count</title>
+    </head>
+    <body>
+        <textarea id="ch" oninput="countChars()" maxlength="100"></textarea>
+        <p id="demo">0/100</p>
+        <script>
+        function countChars(){
+            let x=document.getElementById("ch").value;
+            let y=x.length;
+            document.getElementById("demo").innerHTML=y+"/100";
+        }
+        </script>
+    </body>
+</html>
